@@ -1,9 +1,0 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/encuestas/{{ pregunta.id }}/">{{ pregunta.texto_pregunta }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No hay encuestas para mostrar.</p>
-{% endif %}
